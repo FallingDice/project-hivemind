@@ -30,6 +30,8 @@ public class HiveMindUnitTypes {
     public static void load() {
 
       testunit = new UnitType("testunit"){{
+            constructor = UnitEntity::create;
+          
             speed = 0.5f;
             hitSize = 8f;
             health = 150;
