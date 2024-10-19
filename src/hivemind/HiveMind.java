@@ -18,7 +18,7 @@ public class HiveMind extends Mod{
 
     @Override
     public void loadContent(){
-        Log.info("Loading some example content.");
+        HiveMindUnitTypes.load();
     }
 
 }
