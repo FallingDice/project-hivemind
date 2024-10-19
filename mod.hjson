@@ -1,5 +1,5 @@
 #the mod name as displayed in-game
-displayName: Project Hive Mind
+displayName: ProjectHiveMind
 
 #the internal name of your mod
 name: "project-hivemind"
@@ -8,7 +8,7 @@ name: "project-hivemind"
 author: "FallingDice"
 
 #the fully qualified main class of the mod
-main: "example.ExampleJavaMod"
+main: "project-hivemind.ProjectHiveMind"
 
 #the mod description as seen in the mod dialog
 description: "A Mindustry Java mod template."
