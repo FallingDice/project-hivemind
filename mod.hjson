@@ -11,10 +11,10 @@ author: "FallingDice"
 main: "hivemind.HiveMind"
 
 #the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template."
+description: "my first java mod-test ver"
 
 #the mod version
-version: 1.0
+version: 1.10
 
 #the minimum game build required to run this mod
 minGameVersion: 145
