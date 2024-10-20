@@ -4,7 +4,7 @@ import arc.graphics.Color;
 import arc.util.Log;
 
 import mindustry.content.Fx;
-
+import mindustry.content.StatusEffects;
 import mindustry.entities.Effect;
 import mindustry.entities.bullet.*;
 
@@ -31,12 +31,17 @@ public class HiveMindUnitTypes {
 
       testunit = new UnitType("testunit"){{
             constructor = UnitEntity::create;
+
+            immunities.add(StatusEffects.burning);
           
-            speed = 0.5f;
+            speed = 0.7f;
             hitSize = 8f;
-            health = 150;
+            health = 300;
+            armor = 4f;
+
             weapons.add(new Weapon("large-weapon"){{
                 reload = 13f;
+                shootSound = Sounds.pew;
                 x = 4f;
                 y = 2f;
                 top = false;
@@ -45,6 +50,13 @@ public class HiveMindUnitTypes {
                     width = 7f;
                     height = 9f;
                     lifetime = 60f;
+                    pierce = true;
+                    pierceBuilding = true;
+                    pierceCap = 2;
+                    statusDuration = 60f * 4;
+                    shootEffect = Fx.shootSmallFlame;
+                    hitEffect = Fx.hitFlameSmall;
+                    status = StatusEffects.burning;
                 }};
             }});
         }};
